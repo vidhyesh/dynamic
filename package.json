@@ -1,14 +1,17 @@
 {
   "scripts": {
-    "dev": "ts-node src/index.ts"
+    "dev": "tsx --watch src/index.ts"
   },
   "devDependencies": {
+    "@types/node": "^24.3.1",
     "nodemon": "^3.1.10",
-    "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.20.5",
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "@dynamic-labs-wallet/node-evm": "^0.0.155"
+    "@dynamic-labs-wallet/node": "^0.0.155",
+    "@dynamic-labs-wallet/node-evm": "^0.0.155",
+    "dotenv": "^17.2.2",
+    "viem": "^2.37.5"
   }
 }
